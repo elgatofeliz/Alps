@@ -1,0 +1,146 @@
+/*======================
+Echte Handarbeit - gebaut für 1366x768px
+ =======================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/*=======================
+    GENERAL STYLES
+=======================*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{ /*--dieser style muss, falls Website erweitert wird, evtl verschoben werden--*/
+    font-family: 'Cinzel', serif;
+} 
+
+section>div{
+    text-align: center;
+}
+
+/*=======================
+         LOGO
+=======================*/
+
+header>h1{
+    color: #999;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+/*=======================
+      Hero Section
+=======================*/
+
+section>div:nth-of-type(1){
+    background-image: url("../img/background.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 14.5%;
+    text-align: center;
+}
+
+section>div:nth-of-type(1)>h1{
+    color: #fff;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+/*======================= 
+    Choose your Trip
+ =======================*/
+
+section>article:nth-of-type(1){
+    text-align: center;
+}
+
+section>article:nth-of-type(1)>h2{
+    font-family: 'Cinzel', serif;
+    padding: 60px;
+}
+
+section>article:nth-of-type(1)>p{
+    font-family: 'Poppins', sans-serif; 
+    margin: 0px 9%;
+    margin-bottom: 20px;
+}
+
+/*======================= 
+     Mini-Vorschau
+=======================*/
+
+img {
+    padding: 30px;
+    height: 180px;
+    width: auto;
+}
+
+/*======================= 
+        Tour Dates
+ =======================*/
+
+section>article:last-child>h2{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-family: 'Cinzel', serif;
+}
+
+article>ul{
+    list-style: none;
+    margin-bottom: 100px;
+}
+
+article>ul>li{
+    text-indent: 98px;
+}
+
+article>ul>li{
+    margin: 12px 0px;
+    font-family: 'Poppins', sans-serif; 
+}
+
+article>ul>li:nth-of-type(-n+3)::after{
+    content:" - SOLD OUT!";
+    color: red;
+}
+
+article>ul>li:nth-of-type(4)::after{
+    content:" - ONLY 4 SPOTS AVAILABE";
+    color: red;
+}
+
+article>ul>li:nth-last-child(-n+2)::after{
+    content:" - AVAILABLE";
+    color: green;
+}
+
+section{
+    border-bottom: 1px solid #999;
+}
+
+/*=======================
+         FOOTER 
+=======================*/
+
+footer{
+    font-family: 'Cinzel', serif;
+    text-align: center;
+}
+
+footer>div{
+    padding: 30px;
+}
+
+footer>div>ul>li{
+    display: inline;
+    padding: 30px;
+}
+
+footer>div>ul>li>a{
+    text-decoration: none;
+    color: black;
+}
