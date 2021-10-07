@@ -95,12 +95,9 @@ article>ul{
 }
 
 article>ul>li{
-    text-indent: 98px;
-}
-
-article>ul>li{
     margin: 12px 0px;
     font-family: 'Poppins', sans-serif; 
+    text-indent: 98px;
 }
 
 article>ul>li:nth-of-type(-n+3)::after{
